@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffc0cb;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.homepic {
+    display: block;
+    width: 50%;
+}
+
+h1 {
+    color: white;
+    font-family: 'Coming Soon', cursive;
+}
+
+nav {
+    width: 100%;
+    margin-left: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+nav ul li {
+    display: inline;
+    background-color: rgb(201, 195, 195);
+    margin: 2px;
+    padding: 4px;
+    box-shadow: 1px 0 5px darkgray;
+    transition-property: transform, background-color;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+}
+
+nav ul li:hover {
+    cursor: pointer;
+    background-color: darkgray;
+    transform: translate(10px, 0);
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+#kimberly {
+    display: none;
+}
+
+.slideshow {
+    width: 200px;
+    margin: 5px;
+}
+
+figure {
+    float: left;
+    width: 200px;
+    margin: 0;
+}
+
+figcaption {
+    margin-left: 10px;
+    font-size: 12pt;
+}
+
+main {
+    margin-bottom: 50px;
+    font-size: 14pt;
+}
+
+main p {
+    width: 85%;
+}
+
+#topright, #bottomright {
+    margin-left: 20px;
+}
+
+.right {
+    margin-left: 30px;
+}
+
+label {
+    display: block;
+}
+
+input {
+    margin-left: 10px;
+}
+
+.arrow {
+    width: 15px;
+    margin-bottom: 0;
+    margin-left: 30px;
+}
+
+
+@media (min-width: 700px) {
+    body {
+        width: 65%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #kimberly {
+        float: right;
+        display: block;
+        width: 250px;
+        box-shadow: 3px 3px 2px darkgrey;
+        margin-bottom: 5px;
+        margin-left: 5px;
+    }
+
+    main p {
+        margin-left: 230px;
+        margin-top: 5px;
+    }
+
+    nav {
+        float: left;
+        width: 200px;
+        margin-top: 12px;
+        font-family: 'Alegreya Sans SC', sans-serif;
+        font-size: 18pt;;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 5px;
+        background-color: rgb(201, 195, 195);
+        width: 200px;
+        height: 40px;
+        padding: 5px;
+        box-shadow: 1px 0 5px darkgray;
+    }
+
+    h1 {
+        width: 700px;
+        margin-left: 230px;
+        margin-bottom: 5px;
+    }
+
+    main ul {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    main ul li {
+        margin-left: 250px;
+    }
+
+    .galleries {
+        margin-left: 230px;
+    }
+
+    form {
+        margin-left: 230px;
+    }
+}
